@@ -9,24 +9,26 @@
     <TextView
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:text="Buying_in: "
+            android:text="Buying-in:"
             android:textSize="15sp"
             android:layout_marginLeft="15dp"
             android:layout_gravity="center_vertical"
             android:textColor="@color/black"></TextView>
+
     <EditText
-            android:id="@+id/buying_in"
-            android:textSize="16sp"
-            android:layout_marginLeft="15dp"
-            android:textColor="@color/black"
-            android:inputType="number"
-            android:layout_width="80dp"
-            android:layout_height="40dp" android:textStyle="bold"
-            android:textAlignment="center" android:text="0"></EditText>
+        android:id="@+id/buying_in"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"></EditText>
     <TextView
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:text="Player List: "
+            android:text="Player List:"
             android:textSize="15sp"
             android:layout_marginLeft="15dp"
             android:layout_gravity="center_vertical"
@@ -64,6 +66,5 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
     ></Button>
-
 
 </LinearLayout>
