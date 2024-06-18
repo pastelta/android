@@ -1,68 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:paddingTop="5dp"
-              android:paddingBottom="5dp">
+              android:paddingTop="5sp"
+              android:paddingBottom="5sp">
+
     <EditText
-            android:id="@+id/edit_player_name"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/round_grey"
-            android:layout_weight="1"
-            android:hint="Player Name"
-            android:textSize="14sp"
-            android:paddingLeft="10dp"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"></EditText>
+        android:id="@+id/edit_player_name"
+        android:layout_width="0sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/round_grey"
+        android:hint="@string/player_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
     <ImageView
-            android:id="@+id/image_entry_min"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="5dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/entry_min" app:tint="@color/black"></ImageView>
-    <TextView
-            android:id="@+id/entry"
-            android:layout_width="45dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="5dp"
-            android:textSize="14sp"
-            android:paddingVertical="10dp"
-            android:paddingLeft="15dp"
-            android:textColor="@color/black"
-            android:layout_gravity="center_vertical"
-            android:text="1"></TextView>
-    <ImageView
-            android:id="@+id/image_entry_max"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/entry_max" app:tint="@color/black"></ImageView>
+        android:id="@+id/image_entry_min"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="6sp"
+        android:layout_marginEnd="9sp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/entry_min"
+        app:tint="@color/black"/>
 
     <TextView
-            android:id="@+id/pay_in"
-            android:layout_width="65dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:textSize="14sp"
-            android:paddingVertical="10dp"
-            android:paddingLeft="15dp"
-            android:textColor="@color/black"
-            android:layout_gravity="center_vertical"></TextView>
+        android:id="@+id/entry"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="2sp"
+        android:layout_marginEnd="6sp"
+        android:paddingVertical="10sp"
+        android:paddingStart="15sp"
+        android:text="@string/_1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" />
+
     <ImageView
-            android:id="@+id/image_remove"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="5dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/baseline_close" app:tint="@color/black"></ImageView>
+        android:id="@+id/image_entry_max"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="2sp"
+        android:layout_marginEnd="5sp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/entry_max"
+        app:tint="@color/black"/>
+
+    <TextView
+        android:id="@+id/pay_in"
+        android:layout_width="65sp"
+        android:layout_height="40sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:paddingVertical="10sp"
+        android:paddingStart="15sp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/image_remove"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="10sp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/baseline_close"
+        app:tint="@color/black"/>
 </LinearLayout>
